@@ -4,7 +4,7 @@ import xlwings as xw # For Creating, Reading, and Writing Excel Files
 import csv # For reading csv files
 import os # For file checking
 
-filename = "tests\sample2_statement.csv"
+filename = "tests/sample2_statement.csv"
 
 # Reading the file and storing the values
 row_queue = Queue()
@@ -23,8 +23,8 @@ with open(filename, "r", encoding="utf-8") as csvfile:
             row_queue.enqueue(ll_row)
 
 # If workbook exists open it, else create it
-if os.path.exists("budget.xlsx"):
-    wb = xw.Book("budget.xlsx")
+if os.path.exists(r'results/budget.xlsx'):
+    wb = xw.Book(r'results/budget.xlsx')
     
     # If sheet called "budget" exist open it, else create it
     if "budget" in [sheet.name for sheet in wb.sheets]:
@@ -36,7 +36,7 @@ if os.path.exists("budget.xlsx"):
         
 else:
     wb = xw.Book()
-    wb.save("budget.xlsx")
+    wb.save(r'results/budget.xlsx')
     ws = wb.sheets.add("budget")
     ws.range("A1").value = ["Year", "Month", "Date", "Description", "Category", "Income", "Debits", "Balance"]
     ws.range("D:D").column_width = 30
@@ -111,5 +111,16 @@ else:
     table_range = ws.range(f"A1:H{row_count}")
     ws.api.ListObjects.Add(1, table_range.api, None, 1).Name = table_name
 
+ws.range("J1").value = r'=TEXT(EDATE(TODAY(), -2), "MMMM")'
+ws.range("J2").value = "Earnings"
+ws.range("K1").value = "Total"
+ws.range("K2").formula = r'=SUMIFS(BudgetTable[Income],BudgetTable[Month],J1,BudgetTable[Category],J2)'
+
+ws.range("M1").value = r'=TEXT(EDATE(TODAY(), -1), "MMMM")'
+ws.range("N1").value = "Total"
+
+ws.range("P1").value = r'=TEXT(EDATE(TODAY(), 0), "MMMM")'
+ws.range("Q1").value = "Total"
+
 # Save and close the workbook
-wb.save("budget.xlsx")
+wb.save(r'results/budget.xlsx')
