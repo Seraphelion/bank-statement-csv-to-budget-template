@@ -5,15 +5,20 @@ class Node:
 
 class LinkedList:
     def __init__(self, value = None):
-        new_node = Node(value)
-        self.head = new_node
-        self.tail = new_node
-        self.lenght = 1
+        if value is not None:
+            new_node = Node(value)
+            self.head = new_node
+            self.tail = new_node
+            self.lenght = 1
+        else:
+            self.head = None
+            self.tail = None
+            self.lenght = 0
 
     def __iter__(self):
         current = self.head
         while current is not None:
-            yield current
+            yield current.value
             current = current.next
     
     def __next__(self):
@@ -23,7 +28,10 @@ class LinkedList:
             current = self.head
             self.head = self.head.next
             return current.value
-        
+    
+    def __len__(self):
+        return self.lenght
+
     def __getitem__(self, index):
         if isinstance(index, slice):
             # Handle slicing
@@ -90,11 +98,8 @@ class LinkedList:
         self.tail.next = None
         self.lenght -= 1
 
-    def size(self):
-        return self.lenght
-
     def isEmpty(self):
-        if self.size() == 0:
+        if self.lenght == 0:
             return True
         else:
             return False
