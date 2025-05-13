@@ -9,7 +9,11 @@
 * os - Bibliotēka, kas ļauj strādāt ar Windows failiem. 
 
 ## Ievades faila prasības
-Failam nav obligāti jābūt iegūtam no Swedbankas, bet jābūt balstītam uz sekojošo CSV galveni:
-```
-"Klienta konts","Ieraksta tips","Datums","Saņēmējs/Maksātājs","Informācija saņēmējam","Summa","Valūta","Debets/Kredīts","Arhīva kods","Maksājuma veids","Refernces numurs","Dokumenta numurs"
-```
+* Failam nav obligāti jābūt iegūtam no Swedbankas, bet jābūt balstītam uz sekojošo CSV galveni:
+  ```
+  "Klienta konts","Ieraksta tips","Datums","Saņēmējs/Maksātājs","Informācija saņēmējam","Summa","Valūta","Debets/Kredīts","Arhīva kods","Maksājuma veids","Refernces numurs","Dokumenta numurs"
+  ```
+* "Datums" kolonai jābūt formatētam kā "DD.MM.YYYY".
+* "Summa" kolonai ir jāsatur skaitliska vērtība (pat ja formatēta kā string). 
+* "Debets/Kredīts" kolonai izmaksas (debit) gadījumā jāsatur simbolu "D", bet iemaksu (kredit) gadījumā simbolu "K".
+* Pārējās vērtības programa pašlaik nepielieto.
