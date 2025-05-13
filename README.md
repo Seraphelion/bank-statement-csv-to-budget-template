@@ -14,6 +14,7 @@
   "Klienta konts","Ieraksta tips","Datums","Saņēmējs/Maksātājs","Informācija saņēmējam","Summa","Valūta","Debets/Kredīts","Arhīva kods","Maksājuma veids","Refernces numurs","Dokumenta numurs"
   ```
 * "Datums" kolonai jābūt formatētam kā "DD.MM.YYYY".
-* "Summa" kolonai ir jāsatur skaitliska vērtība (pat ja formatēta kā string). 
+* "Informācija saņēmējam" kolonai ir jāsatur īss paskaidrojums par darījumu.
+* "Summa" kolonai ir jāsatur skaitliska vērtība (pat ja tā formatēta kā string). 
 * "Debets/Kredīts" kolonai izmaksas (debit) gadījumā jāsatur simbolu "D", bet iemaksu (kredit) gadījumā simbolu "K".
-* Pārējās vērtības programa pašlaik nepielieto.
+Pārējās vērtības programma pašlaik nepielieto un to formāts nav svarīgs.
