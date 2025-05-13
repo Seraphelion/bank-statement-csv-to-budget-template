@@ -16,7 +16,7 @@
 * __"Datums"__ kolonai jābūt formatētam kā <ins>"DD.MM.YYYY"</ins>.
 * __"Informācija saņēmējam"__ kolonai ir jāsatur <ins>īss paskaidrojums</ins> par darījumu.
 * __"Summa"__ kolonai ir jāsatur <ins>skaitliska vērtība</ins> (pat ja tā formatēta kā string). 
-* __"Debets/Kredīts"__ kolonai izmaksas (debit) gadījumā jāsatur simbolu <ins>"D"</ins>, bet iemaksu (kredit) gadījumā simbolu <ins>"K"</ins>.
-* Faila otrajai rindai (rindai pec galveņu nosaukumiem) vajadzētu saturēt balanca inicializācijas vērtību. (Ja pēcāki faili satur šādu vērtību tā tiks ignorēta)
+* __"Debets/Kredīts"__ kolonai <ins>debetšu gadījumā jāsatur simbolu "D"</ins>, bet <ins>kredītu gadījumā (iemaksas/ieņēmumi) simbolu "K"</ins>.
+* Faila otrajai rindai (rindai pec galveņu nosaukumiem) vajadzētu saturēt balanca inicializācijas vērtību. (Pēcākiem failiem arī vajadzētu saturēt šadu rindu, bet tā tiks ignorēta.)
 * Pēdējās 3 rindas tiek dzēstas, jo Swedbank ģenerētais CSV fails šajās rindās satur kopējā apgrozījuma un beigu atlikuma vērtības, kas programmas ģenerētajā Excel tiek aprēķinātas patstāvīgi.
 Pārējās vērtības programma pašlaik nepielieto un to formāts nav svarīgs.
