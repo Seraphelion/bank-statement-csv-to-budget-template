@@ -13,9 +13,9 @@
   ```
   "Klienta konts","Ieraksta tips","Datums","Saņēmējs/Maksātājs","Informācija saņēmējam","Summa","Valūta","Debets/Kredīts","Arhīva kods","Maksājuma veids","Refernces numurs","Dokumenta numurs"
   ```
-* __"Datums"__ kolonai jābūt formatētam kā "DD.MM.YYYY".
-* __"Informācija saņēmējam"__ kolonai ir jāsatur īss paskaidrojums par darījumu.
-* __"Summa"__ kolonai ir jāsatur skaitliska vērtība (pat ja tā formatēta kā string). 
-* __"Debets/Kredīts"__ kolonai izmaksas (debit) gadījumā jāsatur simbolu "D", bet iemaksu (kredit) gadījumā simbolu "K".
+* __"Datums"__ kolonai jābūt formatētam kā <ins>"DD.MM.YYYY"</ins>.
+* __"Informācija saņēmējam"__ kolonai ir jāsatur <ins>īss paskaidrojums</ins> par darījumu.
+* __"Summa"__ kolonai ir jāsatur <ins>skaitliska vērtība</ins> (pat ja tā formatēta kā string). 
+* __"Debets/Kredīts"__ kolonai izmaksas (debit) gadījumā jāsatur simbolu <ins>"D"</ins>, bet iemaksu (kredit) gadījumā simbolu <ins>"K"</ins>.
 
 Pārējās vērtības programma pašlaik nepielieto un to formāts nav svarīgs.
