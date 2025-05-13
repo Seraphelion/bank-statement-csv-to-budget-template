@@ -2,11 +2,11 @@
 Šī programa saņem CSV (Comma Seperated Values) failu, kuru var izprintēt no bankas pārskatiem un ļauj doto informāciju pārvērst pārskatāmā budžeta formātā. Programma pašlaik ir eksluzīvi pārbaudītai tikai uz Swedbank bankas izrakstiem, tāpēc var nestrādāt uz CSV iegūtiem no citiem šop pakalpojumu sniedzējiem.
 
 ## Izmantotās biliotēkas un klases
-* LinkedList - Paštaisīta klase, kas funkcionē kā vienvirzienā saistītā sarakta datu struktūra ar dažām modifikācījām:
-* Queue - Paštaisīta klase, kas funckionē kā rindas datu struktūra.
-* xlwings - Bibliotēka, kas ļauj paplašināti apstrādāt Excel failus.
-* csv - Bibliotēka, kas dod funkcionalitāti CSV failu apstrādei.
-* os - Bibliotēka, kas ļauj strādāt ar Windows failiem. 
+* __LinkedList__ - <ins>Paštaisīta klase</ins>, kas funkcionē kā vienvirzienā saistītā sarakta datu struktūra ar dažām modifikācījām:
+* __Queue__ - <ins>Paštaisīta klase</ins>, kas funckionē kā rindas datu struktūra.
+* __xlwings__ - <ins>Bibliotēka</ins>, kas ļauj paplašināti apstrādāt Excel failus. Svarīgi, šij biblotēkai ir vajadzīgs imports (skatīt https://pypi.org/project/xlwings/0.3.2/)
+* __csv__ - <ins>Bibliotēka</ins>, kas dod funkcionalitāti CSV failu apstrādei.
+* __os__ - <ins>Bibliotēka</ins>, kas ļauj strādāt ar Windows failiem. 
 
 ## Ievades faila prasības
 * Failam nav obligāti jābūt iegūtam no Swedbankas, bet jābūt balstītam uz sekojošo CSV galveni:
