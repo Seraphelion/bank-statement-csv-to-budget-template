@@ -20,3 +20,6 @@
 * __Faila otrajai rindai__ (rindai pec galveņu nosaukumiem) vajadzētu saturēt balanca inicializācijas vērtību. (Pēcākiem failiem arī vajadzētu saturēt šadu rindu, bet tā tiks ignorēta.)
 * __Pēdējās 3 rindas__ tiek dzēstas, jo Swedbank ģenerētais CSV fails šajās rindās satur kopējā apgrozījuma un beigu atlikuma vērtības, kas programmas ģenerētajā Excel tiek aprēķinātas patstāvīgi.
 * __Pilnvērtīģai aizpildei__ katrai rindai (izņemot galvenes), jāsatur adekvāta vērtība "Datums", "Informācija saņēmējam", "Summa", un "Debets/Kredīts". Pārējās vērtības var būt neaizpildītas.
+
+## Programmas izvade
+Programma izvada Excel failu, kas satur 4 tabulas. Viena no tabulām satur visus pārskaitījumus, bet pārējās satur pēdējo divu un tagadējā mēneša ienākumus/izdevumus pēc kategorijām. 
