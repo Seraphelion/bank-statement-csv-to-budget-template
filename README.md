@@ -22,4 +22,4 @@
 * __Pilnvērtīģai aizpildei__ katrai rindai (izņemot galvenes), jāsatur adekvāta vērtība "Datums", "Informācija saņēmējam", "Summa", un "Debets/Kredīts". Pārējās vērtības var būt neaizpildītas.
 
 ## Programmas izvade
-Programma izvada Excel failu, kas satur 4 tabulas. Viena no tabulām satur visus pārskaitījumus, bet pārējās satur pēdējo divu un tagadējā mēneša ienākumus/izdevumus pēc kategorijām. 
+Programma izvada Excel failu, kurš satur 4 tabulas. Viena no tabulām sastāv no visiem pārskaitījumiem, bet pārējās aprēķina šī un pēdējo divu mēnešu kopējos ienākumus/izdevumus pēc kategorijām. Tabulas ir formatētas priekš pārskatamības. 
