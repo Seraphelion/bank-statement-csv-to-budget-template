@@ -113,14 +113,21 @@ else:
 
 ws.range("J1").value = r'=TEXT(EDATE(TODAY(), -2), "MMMM")'
 ws.range("J2").value = "Earnings"
+ws.range("J3").value = "Other Income"
 ws.range("K1").value = "Total"
 ws.range("K2").formula = r'=SUMIFS(BudgetTable[Income],BudgetTable[Month],J1,BudgetTable[Category],J2)'
 
 ws.range("M1").value = r'=TEXT(EDATE(TODAY(), -1), "MMMM")'
+ws.range("M2").value = "Earnings"
+ws.range("M3").value = "Other Income"
 ws.range("N1").value = "Total"
+ws.range("N2").formula = r'=SUMIFS(BudgetTable[Income],BudgetTable[Month],M1,BudgetTable[Category],M2)'
 
 ws.range("P1").value = r'=TEXT(EDATE(TODAY(), 0), "MMMM")'
+ws.range("P2").value = "Earnings"
+ws.range("P3").value = "Other Income"
 ws.range("Q1").value = "Total"
+ws.range("Q2").formula = r'=SUMIFS(BudgetTable[Income],BudgetTable[Month],P1,BudgetTable[Category],P2)'
 
 # Save and close the workbook
 wb.save(r'results/budget.xlsx')
